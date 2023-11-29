@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: green;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color:aliceblue;
+    font-size: 22px;
+}
+
+input, a{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], a {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover, a:hover {
+    background-color: #006400;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado de todos os links */
+}

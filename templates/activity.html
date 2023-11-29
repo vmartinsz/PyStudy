@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyStudy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <h1>PyStudy</h1>
+
+    {% if idActivities %}
+        <form action="/receiveactivity/{{ idActivities }}" method="post">
+            <label for="activity_name">Name Activity</label>
+            <input type="text" name="activity_name" value="" required>
+            <label for="matter">Matter</label>
+            <input type="text" name="matter" value="" required>
+            <label>
+                <input type="radio" name="value" value="1"> Conclude
+                <input type="radio" name="value" value="0"> Unconcluded
+            </label>
+            <input type="submit" value="New">
+        </form>
+        </form>
+    {% else %}
+        <form action="/receiveactivity" method="post">
+            <label for="activity_name">Name Activity</label>
+            <input type="text" name="activity_name" value="" required>
+            <label for="matter">Matter</label>
+            <input type="text" name="matter" value="" required>
+            <label>
+                <input type="radio" name="value" value="1"> Conclude
+                <input type="radio" name="value" value="0"> Unconcluded
+            </label>
+            <input type="submit" value="New">
+        </form>
+    {% endif %}
+</body>
+</html>

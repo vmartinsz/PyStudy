@@ -1,0 +1,65 @@
+body {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px; /* Adicionando margem superior */
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f0f8ff; /* aliceblue */
+
+}
+
+table {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto 0; /* Adicionando margem superior e removendo a margem inferior */
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #008000; /* green */
+    color: #f0f8ff; /* aliceblue */
+}
+
+td {
+    background-color: #444;
+    color: #f0f8ff; /* aliceblue */
+}
+
+button, input {
+    background-color: #008000; /* green */
+    color: #f0f8ff; /* aliceblue */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1em;
+}
+
+button:hover, input:hover {
+    background-color: #006400; /* darkgreen */
+}

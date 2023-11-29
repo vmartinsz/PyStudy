@@ -1,0 +1,6 @@
+mysql-connector-python
+flask
+flask-session
+smtplib
+email
+
