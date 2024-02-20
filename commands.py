@@ -171,6 +171,3 @@ def deleteAllUsers():
         cursor.close()
 
 
-
-def teste1():
-    pass
