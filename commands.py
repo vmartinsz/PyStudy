@@ -170,4 +170,7 @@ def deleteAllUsers():
     finally:
         cursor.close()
 
+def teste():
+    pass
+
 
